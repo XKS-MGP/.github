@@ -188,17 +188,9 @@ Nouvelles fonctionnalités, expansion à d’autres régions, intégration IA
 * Documents supplémentaires
 * Schémas, tableaux, données brutes
 
-# Cahier des Charges
+# TERME DE REFERENCES
 
 ## MONDIAL GP
-
----
-
-### XKSGROUP
-
-## Sommaire
-
-(Sommaire déjà listé plus haut)
 
 ---
 
