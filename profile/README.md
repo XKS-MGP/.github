@@ -178,13 +178,6 @@ Difficultés rencontrées, enseignements tirés, ROI estimé
 
 Nouvelles fonctionnalités, expansion à d’autres régions, intégration IA
 
-## Annexes
-
-* Documents supplémentaires
-* Schémas, tableaux, données brutes
-
-
-
 
 # TERME DE REFERENCES
 
