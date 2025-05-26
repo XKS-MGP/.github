@@ -44,12 +44,6 @@
   * [Perspectives d’amélioration ou d’évolution](#perspectives-damélioration-ou-dévolution)
 * [Annexes](#annexes)
 
-  * [Documents supplémentaires](#documents-supplémentaires)
-  * [Schémas, tableaux, données brutes](#schémas-tableaux-données-brutes)
-* [Bibliographie](#bibliographie)
-
-  * [Références des sources utilisées](#références-des-sources-utilisées)
-
 ---
 
 ## Introduction
@@ -101,13 +95,14 @@ L'architecture du projet MondialGP repose sur une structure modulaire, évolutiv
 
 #### Backend (API & Microservices)
 
+* Laravel
 * Node.js, NestJS
-* TypeORM, PostgreSQL/MongoDB
-* Pusher, Socket.IO, JWT
+* TypeORM, MySQL/MongoDB
+* Socket.IO, JWT
 
 #### Infrastructure Cloud
 
-* Docker, Kubernetes, AWS/GCP
+* Docker, Kubernetes, AWS
 
 ### Contraintes techniques
 
@@ -188,11 +183,12 @@ Nouvelles fonctionnalités, expansion à d’autres régions, intégration IA
 * Documents supplémentaires
 * Schémas, tableaux, données brutes
 
+
+
+
 # TERME DE REFERENCES
 
 ## MONDIAL GP
-
----
 
 ## Introduction
 
@@ -348,16 +344,6 @@ Le projet **Mondial GP** vise à répondre à un besoin fréquent dans le contex
 * MondialGP : seul positionné diaspora Afrique-Europe
 * Différenciation : porteurs certifiés + suivi temps réel + sécurité
 
-## (Le reste sera progressivement ajouté. Souhaites-tu que je poursuive avec la partie **Spécifications Fonctionnelles** maintenant ?)
-
-
-
-# Cahier des Charges
-
-## MONDIAL GP
-
-(…sections précédentes…)
-
 ## Spécifications Fonctionnelles
 
 ### Description des fonctionnalités principales
@@ -459,17 +445,6 @@ Le projet **Mondial GP** vise à répondre à un besoin fréquent dans le contex
 * Gestion litiges
 * Validation GP
 
-(Suite dans la section suivante... Veux-tu que j’enchaîne avec les **Spécifications Techniques** ?)
-# Cahier des Charges
-
-## MONDIAL GP
-
-(…sections précédentes…)
-
-## Spécifications Fonctionnelles
-
-(...contenu fonctionnel déjà inséré...)
-
 ## Spécifications Techniques
 
 ### Architecture du système ou du projet
@@ -478,10 +453,10 @@ L'architecture de MondialGP suit une structure modulaire et scalable reposant su
 
 #### 1. Architecture générale
 
-* **Frontend** : application web (Nuxt.js) + mobile (Flutter ou React Native)
+* **Frontend** : application web (Nuxt.js) + mobile (Flutter)
 * **Backend** : API RESTful en NestJS (Node.js)
-* **Base de données** : SQL (PostgreSQL/MySQL) + NoSQL (MongoDB)
-* **Infrastructure cloud** : AWS / GCP / Azure
+* **Base de données** : SQL (MySQL) + NoSQL (MongoDB)
+* **Infrastructure cloud** : AWS
 * **Microservices** : utilisateurs, transactions, géolocalisation, notifications
 
 #### 2. Détails des composants
@@ -489,20 +464,20 @@ L'architecture de MondialGP suit une structure modulaire et scalable reposant su
 **Frontend**
 
 * Frameworks : Nuxt.js (Vue), TailwindCSS, Pinia
-* Communication : REST API + WebSocket (Socket.IO ou Pusher)
+* Communication : REST API + WebSocket (Socket.IO)
 * Applications mobiles cross-platform
 
 **Backend**
 
-* Framework : NestJS (Node.js)
+* Framework : Laravel (PHP) & NestJS (Node.js)
 * Sécurité : JWT pour auth, bcrypt pour les mots de passe
 * Microservices découplés (users, colis, paiement, suivi)
 
 **Base de données**
 
-* PostgreSQL ou MySQL : données structurées (utilisateurs, transactions)
+* MySQL : données structurées (utilisateurs, transactions)
 * MongoDB : données non structurées (chat, logs)
-* ORM : TypeORM
+* ORM : Eloquent, TypeORM
 
 **Infrastructure Cloud**
 
@@ -514,7 +489,7 @@ L'architecture de MondialGP suit une structure modulaire et scalable reposant su
 **Sécurité**
 
 * TLS pour les communications sécurisées
-* Authentification + autorisation JWT
+* Authentification avec Oauth2 + autorisation JWT
 * Conforme RGPD
 * Sauvegardes automatiques + redondance
 
@@ -590,8 +565,6 @@ L'architecture de MondialGP suit une structure modulaire et scalable reposant su
 
 #### 8. Analytics
 
-* Intégration Google Analytics / Mixpanel
+* Intégration Google Analytics
 * Caching (Redis) pour les données fréquentes
-
-(Souhaites-tu maintenant que je continue avec la section **Conception** ?)
 
